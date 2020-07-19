@@ -36,7 +36,7 @@
     align-items: center;
 
     .city-icon,
-    p {
+    .city-description {
       margin-top: 10px;
     }
 
@@ -46,7 +46,7 @@
       filter: contrast(160%);
     }
 
-    p {
+    .city-description {
       text-transform: capitalize;
     }
   }
