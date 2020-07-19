@@ -1,0 +1,12 @@
+@import "./home.scss";
+@import "./variable.scss";
+
+html,
+body,
+#root {
+  font: 0.9rem sans-serif;
+  background: $darkGrey;
+  color: $darkGrey;
+  height: 100%;
+  margin: 0;
+}

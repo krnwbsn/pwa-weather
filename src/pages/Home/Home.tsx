@@ -5,17 +5,7 @@ import { Weather, Search } from "../../components";
 
 const Home = () => {
   const [query, setQuery] = useState("");
-  const [response, setResponse] = useState<IData>({
-    main: { temp: 20 },
-    name: "Jakarta",
-    sys: { country: "Indonesia" },
-    weather: [
-      {
-        description: "cold",
-        icon: "04d",
-      },
-    ],
-  });
+  const [response, setResponse] = useState<IData>(Object);
 
   const handleSearch = async (event: React.KeyboardEvent) => {
     if (event.key === "Enter") {
@@ -31,7 +21,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <Search query={query} onChange={handleChange} onSearch={handleSearch} />
       {response.main && (
         <Weather

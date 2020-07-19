@@ -1,0 +1,53 @@
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px 0px $darkGrey;
+
+  .city-name {
+    font-size: 2em;
+
+    sup {
+      padding: 0.2em 0.6em;
+      margin-left: 0.2em;
+      border-radius: 30px;
+      color: $white;
+      background: $primary;
+      font-size: 0.5em;
+    }
+  }
+
+  .city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: $darkGrey;
+    text-align: center;
+
+    sup {
+      font-size: 0.5em;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .city-icon,
+    p {
+      margin-top: 10px;
+    }
+
+    .city-icon {
+      width: 100px;
+      height: 100px;
+      filter: contrast(160%);
+    }
+
+    p {
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "./variable.scss";
+@import "../components/Weather/styles.scss";
+@import "../components/Search/styles.scss";
+
+.main-container {
+  background: $darkGrey;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .search,
+  .city {
+    border-radius: 10px;
+    background: $white;
+    padding: 20px 20px;
+    width: 360px;
+  }
+}

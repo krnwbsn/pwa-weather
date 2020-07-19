@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
 import { ISearch } from "../../interfaces";
+import { Input } from "antd";
 
 const Search = (props: ISearch) => {
   return (
     <Fragment>
-      <input
+      <Input
         type="text"
         className="search"
-        placeholder="Search..."
+        placeholder="Search location..."
         value={props.query}
         onChange={props.onChange}
         onKeyPress={props.onSearch}
